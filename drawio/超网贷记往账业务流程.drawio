@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-03-28T08:01:58.394Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="qAOjIkb3-iImXnFmhMKG" version="21.0.10" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-28T08:11:33.492Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="FXo5wKVfYG0JCD4gKGwr" version="21.0.10" type="github">
   <diagram name="第 1 页" id="UmcjrFbR8Bty-J6lGjOk">
     <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="2g9oOstZCMVQEJnpLDly-1" value="IpbsServiceImpl.ibpsOutwardCrtran" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="70" width="210" height="60" as="geometry" />
+          <mxGeometry x="80" y="60" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2g9oOstZCMVQEJnpLDly-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2g9oOstZCMVQEJnpLDly-4" target="2g9oOstZCMVQEJnpLDly-6">
           <mxGeometry relative="1" as="geometry">
@@ -24,11 +24,65 @@
         <mxCell id="2g9oOstZCMVQEJnpLDly-7" value="1.收付款户名不能为空&lt;br&gt;2.收款人清算行号不能为空 kipb_bank_info&lt;br&gt;3.限额校验:金额不超过100万" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="300" y="285" width="250" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2g9oOstZCMVQEJnpLDly-8" target="2g9oOstZCMVQEJnpLDly-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="2g9oOstZCMVQEJnpLDly-8" value="验证我行超网渠道状态是否为成功状态(10)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="110" y="390" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2g9oOstZCMVQEJnpLDly-10" value="异常:系统当前状态不允许做交易&lt;br&gt;表kccp_cncc_status" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="354" y="410" width="226" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2g9oOstZCMVQEJnpLDly-11" target="2g9oOstZCMVQEJnpLDly-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-11" value="蜜罐加密处理" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2g9oOstZCMVQEJnpLDly-13" target="2g9oOstZCMVQEJnpLDly-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-13" value="贷记往账交易流水表登记" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-15" value="kibs_outward_crtran" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="635" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2g9oOstZCMVQEJnpLDly-21" target="2g9oOstZCMVQEJnpLDly-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-21" value="外调核心服务s0041300" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-25" value="异常" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2g9oOstZCMVQEJnpLDly-22" target="2g9oOstZCMVQEJnpLDly-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-22" value="外调核心记账&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;成功?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="830" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-27" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2g9oOstZCMVQEJnpLDly-24" target="2g9oOstZCMVQEJnpLDly-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="2g9oOstZCMVQEJnpLDly-24" target="2g9oOstZCMVQEJnpLDly-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="314" y="985" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-24" value="外调核心记账超时?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="274" y="830" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2g9oOstZCMVQEJnpLDly-26" target="2g9oOstZCMVQEJnpLDly-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-26" value="外调核心冲正服务s0049999" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2g9oOstZCMVQEJnpLDly-28" value="抛出异常" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="940" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
